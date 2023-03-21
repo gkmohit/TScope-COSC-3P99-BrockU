@@ -1,10 +1,10 @@
 # TScope: Automatic Timeout Bug Identification for Server Systems
 # Table of Contents
 1. [Introduction](#introduction)
-   1. [Authors](#authors)
 2. [Original Project](#original-project)
    1. [GitHub URL](#github-url)
    2. [Link to Paper](#link-to-paper)
+   3. [Authors](#authors)
 3. [Summary of Changes Made to Project](#summary-of-changes-made-to-project)
 
 ## Introduction
@@ -24,11 +24,7 @@ bug detection schemes, TScope reduces the average false positive rate from
 instrumentation, which makes it practical for production server performance 
 bug identification.
 
-### Authors
 
-- Jingzhu He 
-- Ting Dai 
-- Xiaohui Gu
 ---
 ## Original Project
 ### GitHub URL
@@ -36,6 +32,10 @@ The original TScope was built by North Carolina State University DANCE Research 
 The repository can be found [here](https://github.com/NCSU-DANCE-Research-Group/TScope).
 ### Link to Paper
 
+### Authors
+- Jingzhu He
+- Ting Dai
+- Xiaohui Gu
 ----
 ## Summary of Changes Made to Project
 - Organized classes into respective packages for easy readying
