@@ -1,4 +1,4 @@
-package som_processing;
+package som_processing.processors_2;
 
 import som_processing.data_model.SystemCall;
 
