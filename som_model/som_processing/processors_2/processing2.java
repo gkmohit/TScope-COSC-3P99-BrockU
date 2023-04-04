@@ -30,13 +30,7 @@ public class processing2 {
     public static void doAnalysis(List<SystemCall> syscallLists)
             throws IOException {
 
-        //TODO Made changes here
-        //getSegmentedVectors(syscallLists, appearanceVector, syscallTimeVector, syscallCountVector);
-        List<SystemCall> list = new ArrayList<>();
-        for( int i = 15225928, j = 0; j < 100; j++, i++) {
-            list.add(new SystemCall(i, "item_" + j , j));
-        }
-        getSegmentedVectors(list, appearanceVector, syscallTimeVector, syscallCountVector);
+        getSegmentedVectors(syscallLists, appearanceVector, syscallTimeVector, syscallCountVector);
         FileWriter file0 = null;
         BufferedWriter out0 = null;
         FileWriter file1 = null;
@@ -50,7 +44,7 @@ public class processing2 {
             out0 = new BufferedWriter(file0);
 
 
-            out0.write(list.get(0).getTimeStamp() + ",");
+            out0.write(syscallLists.get(0).getTimeStamp() + ",");
             eEUAppVec = syscallCountVector.get(0);
             for (int j = 0; j < eEUAppVec.size(); j++)
                 out0.write(eEUAppVec.get(j) + ",");
@@ -59,7 +53,7 @@ public class processing2 {
             file1 = new FileWriter(Constants.PSLOG_TIMEVECTOR_TXT);
             out1 = new BufferedWriter(file1);
 
-            out1.write(list.get(0).getTimeStamp() + ",");
+            out1.write(syscallLists.get(0).getTimeStamp() + ",");
             eEUAppVec = syscallTimeVector.get(0);
             for (int j = 0; j < eEUAppVec.size(); j++)
                 out1.write(eEUAppVec.get(j) + ",");
@@ -69,7 +63,7 @@ public class processing2 {
             out2 = new BufferedWriter(file2);
 
             List<Integer> eEUAppVec1;
-            out2.write(list.get(0).getTimeStamp() + ",");
+            out2.write(syscallLists.get(0).getTimeStamp() + ",");
             eEUAppVec1 = appearanceVector.get(0);
             for (int j = 0; j < eEUAppVec1.size(); j++)
                 out2.write(eEUAppVec1.get(j) + ",");

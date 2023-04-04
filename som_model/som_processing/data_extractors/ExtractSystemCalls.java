@@ -1,7 +1,7 @@
 package som_processing.data_extractors;
 
 import som_processing.data_model.SystemCall;
-import som_processing.data_model.SystemTracePOJO;
+
 
 import java.io.File;
 import java.io.FileNotFoundException;
